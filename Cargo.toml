@@ -1,0 +1,19 @@
+[package]
+name = "xampp-control"
+version = "1.0.0"
+description = "Aplicación para controlar el estado de XAMPP en Linux"
+edition = "2021"
+license = "MIT"
+authors = ["Howen Flores <developer@spacehowen.com>"]
+
+[dependencies]
+gtk = "0.18.2"
+
+[package.metadata.deb]
+maintainer = "Howen Flores <developer@spacehowen.com>"
+depends = "libgtk-3-0"
+assets = [
+    ["target/release/xampp-control", "/usr/bin/xampp-control", "755"],
+    ["assets/xampp-control.png", "/usr/share/icons/hicolor/256x256/apps/xampp-control.png", "644"],
+    ["assets/xampp-control.desktop", "/usr/share/applications/xampp-control.desktop", "644"]
+]

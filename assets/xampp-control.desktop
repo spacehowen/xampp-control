@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=XAMPP Control
+GenericName=Controlador de XAMPP
+Comment=Controla el estado de XAMPP desde una interfaz gráfica
+Exec=/usr/bin/xampp-control
+Icon=xampp-control
+Terminal=false
+Categories=Utility;Application;
